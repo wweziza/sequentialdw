@@ -12,7 +12,7 @@ seqdownload(base_url, start_index, end_index, custom_iterator, file_extension, o
 
 Then import the package as example:
 ```py
-import sequentialdw
+from sequentialdw import seqdownload
 
 seqdownload("https://example.com/scripts/python", 0, 100, "", "py", "output", 1)
 ```

@@ -1,5 +1,6 @@
 import os
 import requests
+import time as time
 
 WARNING_COLOR = '\033[93m'  # Yellow color for warning
 RESET_COLOR = '\033[0m'      # Reset color
