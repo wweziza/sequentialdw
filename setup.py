@@ -2,9 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name='sequentialdw',
-    version='2.6',
+    version='3.2',
     packages=find_packages(),
-    install_requires=['requests', 'time'],
+    install_requires=['requests'],
     entry_points={
         'console_scripts': [
             'seqdownload = sequentialdw.seq_download:main'  
