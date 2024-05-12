@@ -1,11 +1,3 @@
-Metadata-Version: 2.1
-Name: sequentialdw
-Version: 1
-Summary: A simple website scrapper with sequential files in it.
-Author: wweziza
-Description-Content-Type: text/markdown
-Requires-Dist: requests
-
 ## sequentialdw
 
 Package to help myself scrapping website files automatically with only one functions:
@@ -14,7 +6,10 @@ seqdownload(base_url, start_index, end_index, custom_iterator, file_extension, o
 ```
 
 ## Usage
-Example of usage
+
+`pip install sequentialdw` 
+
+Then import the package as example:
 ```py
 import sequentialdw
 
