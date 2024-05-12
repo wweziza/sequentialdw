@@ -7,7 +7,7 @@ RESET_COLOR = '\033[0m'      # Reset color
 
 def convert_bytes_to_mb(bytes_size):
     return bytes_size / (1024 * 1024)
-def seqdownload(base_url, start_index, end_index, custom_iterator, file_extension, output_folder, mode):
+def seqdownload(base_url, start_index, end_index, custom_iterator, file_extension, output_folder, mode, timed_out):
     # Create the output folder if it doesn't exist
     os.makedirs(output_folder, exist_ok=True)
 
@@ -69,7 +69,7 @@ def seqdownload(base_url, start_index, end_index, custom_iterator, file_extensio
             end_time = time()
             elapsed_time = end_time - start_time
 
-            if elapsed_time >= 3:
+            if elapsed_time >= timed_out:
                 print("Timeout reached. Skipping to the next file.")
 
         except requests.exceptions.Timeout:
